@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +7,28 @@
     <link rel="stylesheet" href="site.css">
 </head>
 <body>
-    <div class = "contanier">
+    <div class="container">
         <h1>TODO List</h1>
-        <div class = "agregar-tareas">
+        
+        <div class="agregar-tareas">
             <input type="text" id="tareaAgregada" placeholder="Agregar tarea">
-            <button id = "agregar-tarea-boton">Agregar tarea</button>
+            <button id="agregar-tarea-boton">Agregar tarea</button>
         </div>
-        <div class = "filtros">
-            <buttton>Todas</buttton>
-            <buttton>Completadas</buttton>
-            <buttton>Pendientes</buttton>
+
+        <div class="filtros">
+            <button id="mostrarTodas" class="activo">Todas</button>
+            <button id="mostrarCompletadas">Completadas</button>
+            <button id="mostrarPendientes">Pendientes</button>
         </div>
+
         <ul id="listaTareas"></ul>
-        <button>Eliminar tareas</button>
+
         <button id="eliminarCompletadas">Eliminar tareas completadas</button>
+        <button id="tareaMasRapida">Mostrar tarea más rápida</button>
 
-
+        <p id="resultadoRapida"></p>
     </div>
+
     <script src="site.js"></script>
 </body>
 </html>

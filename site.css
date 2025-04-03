@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .agregar-tareas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .agregar-tareas input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .agregar-tareas button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .agregar-tareas button:hover {
+    background-color: #218838;
+  }
+  
+  .filtros {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filtros button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filtros button:hover {
+    background-color: #0056b3;
+  }
+  
+  .filtros button.activo {
+    background-color: #0056b3;
+    font-weight: bold;
+  }
+  
+  #listaTareas {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #listaTareas li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #listaTareas li.completada {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  #listaTareas button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #listaTareas button:hover {
+    background-color: #c82333;
+  }
+  #resultadoRapida {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    color: #28a745;
+  }
+  
